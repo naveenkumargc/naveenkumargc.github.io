@@ -1,0 +1,23 @@
+{
+  "name": "naveenkumargc.github.io",
+  "version": "1.0.0",
+  "description": "Resume of Naveen Kumar GC",
+  "main": "index.html",
+  "dependencies": {
+    "browser-sync": "^2.23.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naveenkumargc/naveenkumargc.github.io.git"
+  },
+  "author": "Naveen Kumar GC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naveenkumargc/naveenkumargc.github.io/issues"
+  },
+  "homepage": "https://github.com/naveenkumargc/naveenkumargc.github.io#readme"
+}
