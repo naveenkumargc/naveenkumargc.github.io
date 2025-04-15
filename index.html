@@ -1,950 +1,992 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-  <head>
+﻿<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Resume- Naveen Kumar GC</title>
     <!-- Bootstrap -->
-    <link href="assets/external/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/external/bootstrap/css/bootstrap.min.css?v=1.0.1" rel="stylesheet">
     <!--favicon-->
-    <link rel="apple-touch-icon" href="assets/theme/img/ico.png">
-    <link rel="shortcut icon" href="assets/theme/img/ico.ico" type="image/x-icon">
-
+    <link rel="apple-touch-icon" href="assets/theme/img/ico.png?v=1.0.1">
+    <link rel="shortcut icon" href="assets/theme/img/ico.ico?v=1.0.1" type="image/x-icon">
     <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Sarala:400,700%7COpen+Sans:400,300' rel='stylesheet' type='text/css'>
-
+    <link href="http://fonts.googleapis.com/css?family=Sarala:400,700%7COpen+Sans:400,300" rel="stylesheet" type="text/css">
     <!-- Theme Style -->
-    <link href="assets/theme/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/theme/css/style.css?v=1.0.1" rel="stylesheet" type="text/css">
     <!-- Your custom css -->
-    <link href="assets/theme/css/theme-custom.css" rel="stylesheet">
-
+    <link href="assets/theme/css/theme-custom.css?v=1.0.1" rel="stylesheet">
     <!-- Font Icons -->
-    <link href="assets/external/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/external/font-awesome-4.2.0/css/font-awesome.min.css?v=1.0.1" rel="stylesheet">
     <!-- Captcha -->
-    <link href="assets/external/simpleCaptcha/jquery.simpleCaptcha.css" rel="stylesheet">
+    <link href="assets/external/simpleCaptcha/jquery.simpleCaptcha.css?v=1.0.1" rel="stylesheet">
     <!-- lightbox -->
-    <link href="assets/external/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <link href="assets/external/magnific-popup/magnific-popup.css?v=1.0.1" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js?v=1.0.1"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js?v=1.0.1"></script>
     <![endif]-->
-
-  </head>
-  <body >
+</head>
+<body>
     <!-- Page Loader -->
     <div class="page-loader">
-      <div class="v-align-center">
-        <div class="middle-content">
-          <div class="img-p-area"> <img src="assets/theme/img/profile-thumb.jpg" alt="" class="img-thumbnail no-radius"></div>
-          <span class="itsme" >Naveen Kumar GC</span>
-          <h4>Welcome !</h4>
-          <p>please wait</p>
-          <div class="anim-pg">
-            <span ></span>
-          </div>
-          <div class="force-pg"><button type="button" id='force-close-pg' class="btn">Skip This &rarr;</button></div>
+        <div class="v-align-center">
+            <div class="middle-content">
+                <div class="img-p-area"> <img src="assets/theme/img/profile-thumb.jpg?v=1.0.1" alt="" class="img-thumbnail no-radius"></div>               <span class="itsme">Naveen Kumar GC</span>
+                <h4>Welcome !</h4>
+                <p>please wait</p>
+                <div class="anim-pg">
+                    <span></span>
+                </div>
+                <div class="force-pg"><button type="button" id='force-close-pg' class="btn">Skip This &rarr;</button></div>
+            </div>
         </div>
-      </div>
     </div><!-- End Page Loader -->
+    <!--loader to show some activity is going on-->
+    <div class="loader-overlay">
+        <div class="loader"></div>
+    </div>
+    <!--loader to show some activity is going on-->
     <!-- body-area -->
     <div class="body-area">
-      <!-- Header -->
-      <header class="main-header">
-        <div class="nav-main">
-          <span class="itsme">Hello !</span>
-          <a href="#menu-ovefly" class="toogle-overfly"><i class="fa fa-bars open-t"></i> <i class="fa fa-times close-t"></i></a>
-          <a href="#search-ovefly" class="toogle-overfly"><i class="fa fa-search open-t"></i> <i class="fa fa-times close-t"></i></a>
-          <a href="#share-ovefly" class="toogle-overfly"><i class="fa fa-plus open-t"></i> <i class="fa fa-times close-t"></i></a>
-        </div>
-
-        <div class="over-fly-area" id="menu-ovefly">
-          <div class="inner-overfly">
-            <div class="middle-overfly">
-              <h2 class="title-over">Menu</h2>
-              <nav class="main-nav" id="menu">
-                <ul class="nav">
-                  <li class="active"><a href="#aboutme" class="inner-link" data-text="About Me"><span>About Me</span></a></li>
-                  <li><a href="#resume" class="inner-link" data-text="My Resume"><span>Resume</span></a></li>
-                  <li><a href="#portfolio" class="inner-link" data-text="My Portfolio"><span>Portfolio</span></a></li>
-                  <li><a href="#"><span>Blog</span></a>
-                    <ul>
-                      <li><a href="blog-list-posts.html"  class="open-link" >List Posts</a></li>
-                      <li><a href="blog-single-post.html"  class="open-link">Single Post</a></li>
-                      <li><a href="#modal-example" data-toggle="modal" >Extra Pages</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#contact" class="inner-link"  data-text="Contact Me"><span>Contact</span></a></li>
-                </ul>
-              </nav>
+        <!-- Header -->
+        <header class="main-header">
+            <div class="nav-main">
+                <span class="itsme">Hello !</span>
+                <a href="#menu-ovefly" class="toogle-overfly"><i class="fa fa-bars open-t"></i> <i class="fa fa-times close-t"></i></a>
+                <a href="#search-ovefly" class="toogle-overfly"><i class="fa fa-search open-t"></i> <i class="fa fa-times close-t"></i></a>
+                <a href="#share-ovefly" class="toogle-overfly"><i class="fa fa-plus open-t"></i> <i class="fa fa-times close-t"></i></a>
             </div>
-          </div>
-        </div>
 
-        <div class="over-fly-area" id="search-ovefly">
-          <div class="inner-overfly">
-            <div class="middle-overfly">
-              <h2 class="title-over">Find My Articles</h2>
-              <form class="from-search">
-                <div class="form-group">
-                  <input type="search" name="s" class="form-control input-lg input-search" placeholder="Input Text Here !" >
+            <div class="over-fly-area" id="menu-ovefly">
+                <div class="inner-overfly">
+                    <div class="middle-overfly">
+                        <h2 class="title-over">Menu</h2>
+                        <nav class="main-nav" id="menu">
+                            <ul class="nav">
+                                <li class="active"><a href="#aboutme" class="inner-link" data-text="About Me"><span>About Me</span></a></li>
+                                <li><a href="#resume" class="inner-link" data-text="My Resume"><span>Resume</span></a></li>
+                                <li><a href="#portfolio" class="inner-link" data-text="My Portfolio"><span>Portfolio</span></a></li>
+                                <li>
+                                    <a href="#"><span>Blog</span></a>
+                                    <ul>
+                                        <li><a href="blog-list-posts.html" class="open-link">List Posts</a></li>
+                                        <li><a href="blog-single-post.html" class="open-link">Single Post</a></li>
+                                        <li><a href="#modal-example" data-toggle="modal">Extra Pages</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#contact" class="inner-link" data-text="Contact Me"><span>Contact</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="form-group">
-                  <button  class="btn btnc2"><span>Search</span></button>
+            </div>
+
+            <div class="over-fly-area" id="search-ovefly">
+                <div class="inner-overfly">
+                    <div class="middle-overfly">
+                        <h2 class="title-over">Find My Articles</h2>
+                        <form class="from-search">
+                            <div class="form-group">
+                                <input type="search" name="s" class="form-control input-lg input-search" placeholder="Input Text Here !">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btnc2"><span>Search</span></button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </form>
             </div>
-          </div>
-        </div>
 
-        <div class="over-fly-area" id="share-ovefly">
-          <div class="inner-overfly">
-            <div class="middle-overfly">
-              <h2 class="title-over">Share This Page</h2>
-              <!-- You MUST change the URL definition in these links to share YOUR page - simply change the URL -->
-              <div class="social-share">
-                <a href="https://plus.google.com/share?url=https://aboutnaveenkumargc.azurewebsites.com" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
-                <a href="http://pinterest.com/pin/create/button/?url=https://aboutnaveenkumargc.azurewebsites.com" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
-                <a href="http://www.facebook.com/share.php?u=https://aboutnaveenkumargc.azurewebsites.com" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-                <a href="http://twitter.com/home?status=https://aboutnaveenkumargc.azurewebsites.com" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- hero  -->
-        <div class="hero-01">
-          <div class="hero-border">
-            <div class="top"></div>
-            <div class="bottom"></div>
-            <div class="left"></div>
-            <div class="right">
-              <div class="v-area">
-                <div class="v-middle  show-span" >
-                  <div class="p5" id="label-menu">
-                    <span>A</span>
-                    <span>B</span>
-                    <span>O</span>
-                    <span>U</span>
-                    <span>T</span>
-                    <span></span>
-                    <span>M</span>
-                    <span>E</span>
-                  </div>
+            <div class="over-fly-area" id="share-ovefly">
+                <div class="inner-overfly">
+                    <div class="middle-overfly">
+                        <h2 class="title-over">Share This Page</h2>
+                        <!-- You MUST change the URL definition in these links to share YOUR page - simply change the URL -->
+                        <div class="social-share">
+                            <a href="https://plus.google.com/share?url=https://aboutnaveenkumargc.azurewebsites.net" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="http://pinterest.com/pin/create/button/?url=https://aboutnaveenkumargc.azurewebsites.net" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                            <a href="http://www.facebook.com/share.php?u=https://aboutnaveenkumargc.azurewebsites.net" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="http://twitter.com/home?status=https://aboutnaveenkumargc.azurewebsites.net" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
 
-          <div class="my-thumb">
-            <div class="thumb-top"><a href="./assets/theme/img/pic/pic1.jpg?v1" class="image-popup" title="This is Me."><img src="assets/theme/img/profile-thumb.jpg?v1" class="img-thumbnail no-radius"  alt=""></a></div>
-          </div>
+            <!-- hero  -->
+            <div class="hero-01">
+                <div class="hero-border">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                    <div class="left"></div>
+                    <div class="right">
+                        <div class="v-area">
+                            <div class="v-middle  show-span">
+                                <div class="p5" id="label-menu">
+                                    <span>A</span>
+                                    <span>B</span>
+                                    <span>O</span>
+                                    <span>U</span>
+                                    <span>T</span>
+                                    <span></span>
+                                    <span>M</span>
+                                    <span>E</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="content-hero">
-            <div class="v-content">
-              <h4 class="font-normal">My Name is</h4>
-              <h1 class="myname">Naveen Kumar GC</h1>
-              <h3 class="font-normal with-line">Software engineer from India</h3>
-              <p ><a href="mailto:gc.naveen1@gmail.com?&subject=Let%20us%20discuss%20about%20and%20oppurtunity&body=Hi%20Naveen%20" class="btn btnc1"><span>Email me</span></a>
-                <a href="assets/Resume/Resume-NaveenKumarGC.pdf" class="btn btnc1"><span>Download Resume</span></a></p>
-            </div>
-          </div>
-        </div><!-- hero  -->
-      </header><!-- end HEader -->
-      <!-- Content body -->
-      <div class="content-body">
+                <div class="my-thumb">
+                    <div class="thumb-top"><a href="./assets/theme/img/pic/pic1.jpg?v=1.0.1" class="image-popup" title="This is Me."><img src="assets/theme/img/profile-thumb.jpg?v=1.0.1" class="img-thumbnail no-radius" alt=""></a></div>
+                </div>
 
-        <!-- start about me section -->
-        <section id="aboutme">
-          <div class="section-padd bg2" >
-            <div class="container-body clearfix">
-              <div class="big-qoute">
-                <h3>Start where you are. Use what you have. Do what you can. <small>&rarr; Naveen Kumar GC</small></h3>
-              </div>
-            </div>
-          </div>
-          <div class="section-padd top-bold-border" >
-            <div class="container-body clearfix">
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="img-pr">
-                          <a href="./assets/theme/img/pic/pic2.jpg" class="image-popup" title="This is Me.">
-                              <img src="assets/theme/img/profile.jpg" alt="">
-                          </a>
+                <div class="content-hero">
+                    <div class="v-content">
+                        <h4 class="font-normal">My Name is</h4>
+                        <h1 class="myname">Naveen Kumar GC</h1>
+                        <h3 class="font-normal with-line">Software engineer from India</h3>
+                        <p>
+                            <a href="mailto:gc.naveen1@gmail.com?&subject=Let%20us%20discuss%20about%20and%20oppurtunity&body=Hi%20Naveen%20" class="btn btnc1"><span>Email me</span></a>
+                            <a onclick="downloadLatestPdf()" class="btn btnc1"><span>Download Resume</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div><!-- hero  -->
+        </header><!-- end HEader -->
+        <!-- Content body -->
+        <div class="content-body">
+
+            <!-- start about me section -->
+            <section id="aboutme">
+                <div class="section-padd bg2">
+                    <div class="container-body clearfix">
+                        <div class="big-qoute">
+                            <h3>Start where you are. Use what you have. Do what you can. <small>&rarr; Naveen Kumar GC</small></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-padd top-bold-border">
+                    <div class="container-body clearfix">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="img-pr">
+                                    <a href="./assets/theme/img/pic/pic2.jpg?v=1.0.1" class="image-popup" title="This is Me.">
+                                        <img src="assets/theme/img/profile.jpg?v=1.0.1" alt="">
+                                    </a>
+                                </div>
+                                <h2 class="title"><span>Hello there</span></h2>
+                                <!--<p>I discovered my passion for design when I was a sophomore in High School; It was then when it became clear what I wanted to do for a living. I pursued my career at the amazing Valencia College where I started my major in Print Design. A year later I took a begginer’s Web class, where I discovered the love for code. After that, I switched my major to Interactive Design and started the never-ending journey of becoming a web developer along with sharpening my eye for design.</p>
+                                <p>In 2013 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Ut enim ad minim veniam, quis nostrud exercitation quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+                                I am energetic and solutions-driven programmer with ten years, five months track record of commended performance in modular
+                                and object oriented programming. Well-versed in all phases of the software development lifecycle. Proven success engineering
+                                customized solutions improving business processes, operations and profitability.<br />
+                                Software engineer with honors in Computer Science and Engineering with skills across web applications, web services (REST)
+                                development, Full stack software development, Scalable Software Architecture and Backend-Development.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix br-t">
+                    <div class="col-md-12 col-sm-12 no-padding">
+                        <div class="desc-mini no-br-l">
+                            <div class="mid-desc-mini">
+                                <h3>A full stack developer.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-md-6 col-sm-6 no-padding">
+                      <div class="desc-mini no-br-l">
+                        <div class="mid-desc-mini">
+                          <h3>Web Designer</h3>
+                        </div>
                       </div>
-                      <h2 class="title"><span>Hello there</span></h2>
-                      <!--<p>I discovered my passion for design when I was a sophomore in High School; It was then when it became clear what I wanted to do for a living. I pursued my career at the amazing Valencia College where I started my major in Print Design. A year later I took a begginer’s Web class, where I discovered the love for code. After that, I switched my major to Interactive Design and started the never-ending journey of becoming a web developer along with sharpening my eye for design.</p>
-    <p>In 2013 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Ut enim ad minim veniam, quis nostrud exercitation quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
-                      I am energetic and solutions-driven programmer with three year, eleven months track record of commended performance in modular
-                      and object oriented programming. Well-versed in all phases of the software development lifecycle. Proven success engineering
-                      customized solutions improving business processes, operations and profitability.<br />
-                      Software engineer with honors in Computer Science and Engineering with skills across web applications, web services (REST)
-                      development, Full stack software development, Open Source Software Development, Scalable Software Architecture and
-                      Backend-Development.
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="clearfix br-t">
-              <div class="col-md-12 col-sm-12 no-padding">
-                  <div class="desc-mini no-br-l">
-                      <div class="mid-desc-mini">
-                          <h3>A full stack developer.</h3>
+                    </div>
+                    <div class="col-md-6 col-sm-6 no-padding">
+                      <div class="desc-mini">
+                        <div class="mid-desc-mini">
+                          <h3>Web Developer</h3>
+                        </div>
                       </div>
-                  </div>
-              </div>
-              <!--<div class="col-md-6 col-sm-6 no-padding">
-      <div class="desc-mini no-br-l">
-        <div class="mid-desc-mini">
-          <h3>Web Designer</h3>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6 col-sm-6 no-padding">
-      <div class="desc-mini">
-        <div class="mid-desc-mini">
-          <h3>Web Developer</h3>
-        </div>
-      </div>
-    </div>-->
-          </div>
-          <div class="bg2 p30 br-b">
-            <div class="container-body clearfix">
-              <div class="clearfix br-t br-r " >
-                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
-                  <div class="desc-mini">
-                    <div class="mid-desc-mini">
-                      <h4>Birthdate</h4>
-                      <p>01/08/1992</p>
+                    </div>-->
+                </div>
+                <div class="bg2 p30 br-b">
+                    <div class="container-body clearfix">
+                        <div class="clearfix br-t br-r ">
+                            <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                                <div class="desc-mini">
+                                    <div class="mid-desc-mini">
+                                        <h4>Birthdate</h4>
+                                        <p>01/08/1992</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                                <div class="desc-mini">
+                                    <div class="mid-desc-mini">
+                                        <h4>Whats App</h4>
+                                        <p><a href="https://wa.me/+919591913928">click to chat</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                                <div class="desc-mini">
+                                    <div class="mid-desc-mini">
+                                        <h4>Phone </h4>
+                                        <p>+91-9591913928</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                                <div class="desc-mini">
+                                    <div class="mid-desc-mini">
+                                        <h4>Email</h4>
+                                        <p>gc.naveen1@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                                <div class="desc-mini">
+                                    <div class="mid-desc-mini">
+                                        <h4>Website</h4>
+                                        <p style="word-break: break-all;"><a href="https://aboutnaveenkumargc.azurewebsites.net">https://aboutnaveenkumargc.azurewebsites.net</a></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                                <div class="desc-mini">
+                                    <div class="mid-desc-mini">
+                                        <h4>Address </h4>
+                                        <p>3rd phase, Gayatri Layout, KR Pura, Bengaluru, Karnataka - 560036</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- end about me section -->
+            <!-- start resume section -->
+            <section id="resume">
+                <div class="section-padd">
+                    <div class="container-body clearfix">
+                        <h2 class="title"><span>Education</span></h2>
+                        <div class="white-space-10"></div>
+                        <!-- resume list-->
+                        <ul class="resume-list">
+                            <li>
+                                <h4><i class="fa fa-calendar ic-re"></i> 2010-2014</h4>
+                                <i>Bachelor Degree</i>
+                                <h3><i class="fa fa-building-o ic-re"></i>SJC Institute of technology, Chikballapur, Karnataka, India.</h3>
+                                <p>Studied Bachelor of engineering in computer science and engineering.</p>
+                            </li>
+                            <!--<li>
+                              <h4><i class="fa fa-calendar ic-re" ></i> 2010-2012</h4>
+                              <i>Bachelor Degree</i>
+                              <h3><i class="fa fa-building-o ic-re" ></i> Design University</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                            </li>
+                            <li>
+                              <h4><i class="fa fa-calendar ic-re" ></i> 2010-2012</h4>
+                              <i>Bachelor Degree</i>
+                              <h3><i class="fa fa-building-o ic-re" ></i> Design University</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                            </li>-->
+                        </ul><!-- end resume list-->
+                        <h2 class="title"><span>Employment</span></h2>
+                        <div class="white-space-10"></div>
+                        <!-- resume list-->
+                        Total experience: 10.5+ years.
+                        <ul class="resume-list">
+                            <li>
+                                <h4><i class="fa fa-calendar ic-re"></i> December 2019 - Current (5 years, 4 months)</h4>
+                                <i>
+                                    <b>
+                                        Senior Software Engineer
+                                    </b>
+                                </i>
+                                <h3><i class="fa fa-building-o ic-re"></i>Microchip Technology</h3>
+                                <p>Proactively manage and improve a sophisticated complex ERP system while being accountable for addressing user tickets related to our project.</p>
+                            </li>
+                            <li>
+                                <h4><i class="fa fa-calendar ic-re"></i> March 2019 - December 2019 (10 months)</h4>
+                                <i>
+                                    <b>Senior Software Engineer</b>
+                                </i>
+                                <h3>
+                                    <i class="fa fa-building-o ic-re"></i>Prime focus technology.
+                                </h3>
+                                <p>Led the development and optimization of complex media workflows, including uploads and downloads, for company's flagship product, CLEAR, ensuring seamless media processing and enhancing operational efficiency.</p>
+                            </li>
+                            <li>
+                                <h4><i class="fa fa-calendar ic-re"></i> April 2018 - February 2019 (11 months)</h4>
+                                <i>
+                                    <b>Senior Software Engineer</b>
+                                </i>
+                                <h3><i class="fa fa-building-o ic-re"></i>Vyshnavi Information Technologies</h3>
+                                <p>Collaborated with L'Oréal Research and Innovation in Bengaluru, spearheading intricate projects that streamlined workflows, empowering scientists to efficiently initiate and execute their research endeavors.</p>
+                            </li>
+                            <li>
+                                <h4><i class="fa fa-calendar ic-re"></i> October 2014 - April 2018 (3 years, 7 months)</h4>
+                                <i>
+                                    <b>Software Engineer</b>
+                                </i>
+                                <h3><i class="fa fa-building-o ic-re"></i>Vyshnavi Information Technology</h3>
+                                <p>Responsible for strategic and tactical lead in the definition and delivery of a variety of projects</p>
+                            </li>
+                        </ul><!-- end resume list-->
+                        <h2 class="title"><span>Skills</span></h2>
+                        <!-- skills -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!--<h3 class="title-2">Web Designer</h3>-->
+                                <ul class="list-unstyled list-progress">
+                                    <li>
+                                        <h4>C# .net <small>80%</small></h4>
+                                        <div class="progress-line">
+                                            <div class="line" data-holdwidth="80%"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>HTML 5, CSS3, Boot strap, Kendo, Front end tools.<small>70%</small></h4>
+                                        <div class="progress-line">
+                                            <div class="line" data-holdwidth="70%"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>Devops, CD - CI,<small>90%</small></h4>
+                                        <div class="progress-line">
+                                            <div class="line" data-holdwidth="90%"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <!--<h3 class="title-2">Web Development</h3>-->
+                                <ul class="list-unstyled list-progress">
+                                    <li>
+                                        <h4><span>Asp .net MVC, Entity framework, Linq  </span>   <small>80%</small></h4>
+                                        <div class="progress-line">
+                                            <div class="line" data-holdwidth="80%"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>Javascript, Jquery, React ,Angular,   <small>80%</small></h4>
+                                        <div class="progress-line">
+                                            <div class="line" data-holdwidth="80%"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>SQL, MSSql, Oracle Sql <small>70%</small></h4>
+                                        <div class="progress-line">
+                                            <div class="line" data-holdwidth="70%"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- skills -->
+                        <!-- soft skills -->
+                        <h3 class="title-2">Soft Skills</h3>
+                        <div class="clearfix text-center">
+                            <div class="col-md-3 col-sm-6 col-xs-6  no-padding">
+                                <div class="mb30">
+                                    <div class="chart" data-percent="87"><span class="percent"></span></div>
+                                    <h4>Creative   </h4>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6  col-xs-6 no-padding">
+                                <div class="mb30">
+                                    <div class="chart" data-percent="73"><span class="percent"></span></div>
+                                    <h4>Leadership   </h4>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6  no-padding">
+                                <div class="mb30">
+                                    <div class="chart" data-percent="80"><span class="percent"></span></div>
+                                    <h4>Communication </h4>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 no-padding">
+                                <div class="mb30">
+                                    <div class="chart" data-percent="90"><span class="percent"></span></div>
+                                    <h4>Confident </h4>
+                                </div>
+                            </div>
+                        </div><!-- end soft skills -->
+                    </div>
+                </div>
+            </section><!-- end resume section-->
+            <!-- start portfolio section-->
+            <section id="portfolio">
+
+                <!-- filter portfolio -->
+                <div class="section-padd br-t bg2">
+                    <div class="container-body clearfix">
+                        <h2 class="title dark"><span>My Works</span></h2> <i> - can't be disclosed publically due to confidentiality</i>
+                        <ul class="list-inline list-filter-galery">
+                            <li class="active" data-filter="*"><a href="#">All</a></li>
+                            <li data-filter=".img"><a href="#">Image</a></li>
+                            <li data-filter=".gal"><a href="#">Gallery</a></li>
+                            <li data-filter=".vid"><a href="#">Video</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- grid portfolio -->
+                <div class="galery-box clearfix bg2">
+                    <div class="col-sm-3 col-xs-6 item-box img">
+                        <div class="hover-area">
+                            <div class="text-vcenter-area">
+                                <div class="text-vcenter">
+                                    <h3><a href="works/work-1.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/theme/img/thumb/1.jpg?v=1.0.1" alt="">
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item-box gal">
+                        <div class="hover-area">
+                            <div class="text-vcenter-area">
+                                <div class="text-vcenter">
+                                    <h3><a href="works/work-galery.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bs-gslider1" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="assets/theme/img/thumb/2.jpg?v=1.0.1" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/theme/img/thumb/3.jpg?v=1.0.1" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item-box vid">
+                        <div class="hover-area">
+                            <div class="text-vcenter-area">
+                                <div class="text-vcenter">
+                                    <h3><a href="works/work-vimeo.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/theme/img/thumb/4.jpg?v=1.0.1" alt="">
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item-box vid">
+                        <div class="hover-area">
+                            <div class="text-vcenter-area">
+                                <div class="text-vcenter">
+                                    <h3><a href="works/work-youtube.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/theme/img/thumb/5.jpg?v=1.0.1" alt="">
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item-box img">
+                        <div class="hover-area">
+                            <div class="text-vcenter-area">
+                                <div class="text-vcenter">
+                                    <h3><a href="works/work-image.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/theme/img/thumb/6.jpg?v=1.0.1" alt="">
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item-box img">
+                        <div class="hover-area">
+                            <div class="text-vcenter-area">
+                                <div class="text-vcenter">
+                                    <h3><a href="works/work-image.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/theme/img/thumb/7.jpg?v=1.0.1" alt="">
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item-box gal">
+                        <div class="hover-area">
+                            <div class="text-vcenter-area">
+                                <div class="text-vcenter">
+                                    <h3><a href="works/work-galery.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bs-gslider2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4010">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="assets/theme/img/thumb/8.jpg?v=1.0.1" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/theme/img/thumb/9.jpg?v=1.0.1" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item-box img">
+                        <div class="hover-area">
+                            <div class="text-vcenter-area">
+                                <div class="text-vcenter">
+                                    <h3><a href="works/work-image.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/theme/img/thumb/10.jpg?v=1.0.1" alt="">
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item-box vid">
+                        <div class="hover-area">
+                            <div class="text-vcenter-area">
+                                <div class="text-vcenter">
+                                    <h3><a href="works/work-youtube.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/theme/img/thumb/11.jpg?v=1.0.1" alt="">
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item-box gal">
+                        <div class="hover-area">
+                            <div class="text-vcenter-area">
+                                <div class="text-vcenter">
+                                    <h3><a href="works/work-galery.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bs-gslider3" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3010">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="assets/theme/img/thumb/12.jpg?v=1.0.1" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/theme/img/thumb/13.jpg?v=1.0.1" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item-box img">
+                        <div class="hover-area">
+                            <div class="text-vcenter-area">
+                                <div class="text-vcenter">
+                                    <h3><a href="works/work-image.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/theme/img/thumb/14.jpg?v=1.0.1" alt="">
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item-box vid">
+                        <div class="hover-area">
+                            <div class="text-vcenter-area">
+                                <div class="text-vcenter">
+                                    <h3><a href="works/work-vimeo.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/theme/img/thumb/15.jpg?v=1.0.1" alt="">
+                    </div>
+                </div>
+                <!-- end grid portfolio -->
+                <!-- team -->
+                <!--<div class="section-padd br-b bg2" >
+                  <div class="container-body clearfix">
+                    <h2 class="title dark"><span>My Team</span></h2>
+                    <div class="white-space-10"></div>
+                    <div class="row">
+                      <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="team-box">
+                          <img src="assets/theme/img/people/10.jpg?v=1.0.1" alt="" >
+                          <h4>Jhoanes Yuneuz</h4>
+                          <p>Programmer</p>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="team-box">
+                          <img src="assets/theme/img/people/11.jpg?v=1.0.1" alt="" >
+                          <h4>Rose Luxyu</h4>
+                          <p>Marketer</p>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="team-box">
+                          <img src="assets/theme/img/people/12.jpg?v=1.0.1" alt="" >
+                          <h4>Eric Sukarto</h4>
+                          <p>Documenter</p>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="team-box">
+                          <img src="assets/theme/img/people/13.jpg?v=1.0.1" alt="" >
+                          <h4>Andred Grick</h4>
+                          <p>Analytics</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                </div>-->
+                <!-- end team -->
+
+
+                <div class="section-padd">
+                    <div class="container-body clearfix">
+                        <!-- recent client -->
+                        <h2 class="title"><span>Recent Clients</span></h2>
+                        <div class="white-space-10"></div>
+                        <ul class="list-inline text-center list-force-img clearfix">
+                            <li><a href="#"><img src="assets/theme/img/patner/6.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/theme/img/patner/7.jpg?v=1.0.1" alt=""></a></li>
+                            <li><a href="#"><img src="assets/theme/img/patner/8.png" alt=""></a></li>
+                            <!--<li><a href="#"><img src="assets/theme/img/patner/4.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/theme/img/patner/5.png" alt=""></a></li>-->
+                        </ul>
+                        <!-- recent client -->
+                        <!-- testimonial -->
+                        <div style="display:none;">
+                            <h2 class="title"><span>Testimonial</span></h2>
+                            <div class="white-space-10"></div>
+                            <ul class="list-unstyled list-testimonial clearfix">
+                                <li>
+                                    <img src="assets/theme/img/people/1.jpg?v=1.0.1" alt="" class="img-thumbnail img-circle">
+                                    <div class="text-testimonial">
+                                        <h3>
+                                            No One Only You
+                                            <small class="ratting">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-empty"></i>
+                                                <span>(4.5/5)</span>
+                                            </small>
+                                        </h3>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor. Phasellus viverra nulla ut metus varius laoreet.
+                                        <h4>Margaret Lubt - <small>Founder  <a href="#"><i class="fa fa-globe"></i> www.website.com</a></small></h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="assets/theme/img/people/2.jpg?v=1.0.1" alt="" class="img-thumbnail img-circle">
+                                    <div class="text-testimonial">
+                                        <h3>
+                                            Amazing Team
+                                            <small class="ratting">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-empty"></i>
+                                                <span>(4.5/5)</span>
+                                            </small>
+                                        </h3>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor. Phasellus viverra nulla ut metus varius laoreet.
+                                        <h4>Tony Struck - <small>Founder  <a href="#"><i class="fa fa-globe"></i> www.website.com</a></small></h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="assets/theme/img/people/3.jpg?v=1.0.1" alt="" class="img-thumbnail img-circle">
+                                    <div class="text-testimonial">
+                                        <h3>
+                                            Good Job Guys
+                                            <small class="ratting">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-empty"></i>
+                                                <span>(4.5/5)</span>
+                                            </small>
+                                        </h3>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor. Phasellus viverra nulla ut metus varius laoreet.
+                                        <h4>Geisha Rose - <small>Founder  <a href="#"><i class="fa fa-globe"></i> www.website.com</a></small></h4>
+                                    </div>
+                                </li>
+                            </ul><!-- end testimonial -->
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
-                  <div class="desc-mini">
-                    <div class="mid-desc-mini">
-                      <h4>Skype</h4>
-                      <p>naveenkumar.gc</p>
+
+                <!-- service -->
+                <!--<div class="section-padd br-t br-b bg2" >
+                  <div class="container-body clearfix">
+                    <h2 class="title dark"><span>Services</span></h2>
+                    <div class="white-space-10"></div>
+                    <div class="row">
+                      <div class="col-md-4 col-sm-4">
+                        <div class="box-service">
+                          <div class="ic"><i class="fa fa-pencil "></i></div>
+                          <h3>Design</h3>
+                          <ul>
+                            <li>Planing</li>
+                            <li>Design</li>
+                            <li>Develop</li>
+                            <li>Deploy Product</li>
+                          </ul>
+                          <div class="price">$130$-$900</div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <div class="box-service">
+                          <div class="ic"><i class="fa fa-desktop "></i></div>
+                          <h3>Web Apps</h3>
+                          <ul>
+                            <li>Planing</li>
+                            <li>Design</li>
+                            <li>Develop</li>
+                            <li>Deploy Product</li>
+                          </ul>
+                          <div class="price">$2050-$3600</div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <div class="box-service">
+                          <div class="ic"><i class="fa fa-gamepad "></i></div>
+                          <h3>Game Apps</h3>
+                          <ul>
+                            <li>Planing</li>
+                            <li>Design</li>
+                            <li>Develop</li>
+                            <li>Deploy Product</li>
+                          </ul>
+                          <div class="price">$1050-$2600</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
-                  <div class="desc-mini">
-                    <div class="mid-desc-mini">
-                      <h4>Phone </h4>
-                      <p>+91-9591913928</p>
+                </div>-->
+                <!-- end service -->
+            </section><!-- end portfolio section -->
+            <!-- start contact section -->
+            <section id='contact'>
+
+                <!-- map -->
+                <div class="map-area  br-t br-b">
+                    <!-- change data-lat="48.856318" data-lng="2.351866" with your location-->
+                    <div class="map" id="map" data-lat="13.013272" data-lng="77.708658"></div>
+                    <div class="map-scroll-space"></div>
+                    <div class="map-wait-msg">Plase Wait...</div>
+                    <div class="map-detail-location">
+                        <h4>Location:</h4>
+                        <p>#77, Swathi Nilaya, 3rd Phase, Gayatri layout, KR Pura, Bangalore, Karnataka - 560036, India.</p>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
-                  <div class="desc-mini">
-                    <div class="mid-desc-mini">
-                      <h4>Email</h4>
-                      <p>gc.naveen1@gmail.com</p>
+                </div><!-- end map -->
+                <!-- contact form -->
+                <div class="section-padd">
+                    <div class="container-body clearfix">
+                        <h2 class="title dark"><span>Let's Talk About <small id='show-subject'>...</small> <small><a href="#" class="fire-toogle-subject mini-arrow"><i class="fa fa-angle-down"></i></a></small></span></h2>
+                        <div class="dropdown top-min">
+                            <a href="#" data-toggle="dropdown" id='toogle-subject'></a>
+                            <ul class="dropdown-menu" id="option_subject">
+                                <li><a href="#">The Next Project</a></li>
+                                <li><a href="#">The Next Design</a></li>
+                                <li><a href="#">The Next Mobile Apps</a></li>
+                                <li><a href="#">Say Hi</a></li>
+                            </ul>
+                        </div>
+                        <div class="white-space-10"></div>
+                        <form method="post" id="ContactForm" name="contactForm" class="validate-form">
+                            <input type="hidden" name="subject" value="" id='subject_contact'>
+                            <input type="hidden" name="file" id="file-att" value="">
+                            <div class="form-group">
+                                <label>Your Name (*)</label>
+                                <input type="text" class="form-control form-flat" name="fullname" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email (*)</label>
+                                <input type="email" class="form-control form-flat" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Message (*)</label>
+                                <textarea class="form-control form-flat" name="message" rows="8" required></textarea>
+                            </div>
+
+                            <div class="hold-feature uploader-hold">
+                                <div class="form-group">
+                                    <label>Attach Your Document (Optional) <span class="display-block ">(only .pdf  allowed , max size 2Mb)</span></label>
+                                    <div class="clearfix">
+                                        <input type="button" id="upload-btn" class="btn  btn-file btn-xs btn-default clearfix" value="Choose file">
+                                        <div id="errormsg" class="clearfix error"></div>
+                                        <div id="pic-progress-wrap" class="progress-wrap"></div>
+                                        <div id="picbox" class="attbox "></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hold-feature captcha-hold">
+                                <div class="form-group">
+                                    <!-- generate captcha -->
+                                    <div id="mycaptcha-wrap" class="mycaptcha1">
+                                        <div id="mycaptcha" class="mycaptcha1"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btnc2 with-br "><span>Send This Message</span></button>
+                            </div>
+
+                            <div class="form-group">
+                                <!-- aja msg -->
+                                <div class="preload-submit hidden"><hr /> <i class="fa fa-spinner fa-spin"></i> Please Wait ...</div>
+                                <div class="message-submit error hidden"></div>
+                            </div>
+                        </form>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
-                  <div class="desc-mini" >
-                    <div class="mid-desc-mini">
-                      <h4>Website</h4>
-                        <p style="word-break: break-all;"><a href="https://aboutnaveenkumargc.azurewebsites.com">https://aboutnaveenkumargc.azurewebsites.com</a></p>
-                      <p></p>
+                </div><!-- end contact form -->
+                <!-- social links -->
+                <div class="clearfix br-t">
+                    <div class="col-md-3 col-xs-6 no-padding">
+                        <div class="desc-mini no-br-l">
+                            <div class="mid-desc-mini">
+                                <h3><a href="https://www.linkedin.com/in/naveen-kumar-gc-a3455554/" class="black-link" target="_blank">&nbsp;<i class="fa fa-linkedin"></i>&nbsp;</a></h3>
+                                <p><a href="https://www.linkedin.com/in/naveen-kumar-gc-a3455554/" class="black-link" target="_blank">LinkedIn</a></p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
-                  <div class="desc-mini">
-                    <div class="mid-desc-mini">
-                      <h4>Address </h4>
-                      <p>3rd phase, Gayatri Layout, KR Pura, Bengaluru, Karnataka - 560036</p>
+                    <div class="col-md-3 col-xs-6 no-padding">
+                        <div class="desc-mini">
+                            <div class="mid-desc-mini">
+                                <h3><a href="https://stackoverflow.com/users/4226224/naveen-kumar-g-c" class="black-link" target="_blank">&nbsp;<i class="fa fa-stack-overflow"></i> &nbsp;</a></h3>
+                                <p><a href="https://stackoverflow.com/users/4226224/naveen-kumar-g-c" class="black-link" target="_blank">Stack Overflow</a></p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section><!-- end about me section -->
-
-        <!-- start resume section -->
-        <section id="resume">
-          <div class="section-padd" >
-            <div class="container-body clearfix">
-              <h2 class="title"><span>Education</span></h2>
-              <div class="white-space-10" ></div>
-              <!-- resume list-->
-              <ul class="resume-list"> 
-                <li> 
-                  <h4><i class="fa fa-calendar ic-re"></i> 2010-2014</h4>
-                  <i>Bachelor Degree</i>
-                  <h3><i class="fa fa-building-o ic-re" ></i>SJC Institute of technology</h3>
-                  <p>Studied Bachelor of engineering in computer science and engineering.</p>
-                </li>
-                <!--<li> 
-                  <h4><i class="fa fa-calendar ic-re" ></i> 2010-2012</h4>
-                  <i>Bachelor Degree</i>
-                  <h3><i class="fa fa-building-o ic-re" ></i> Design University</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                </li>
-                <li> 
-                  <h4><i class="fa fa-calendar ic-re" ></i> 2010-2012</h4>
-                  <i>Bachelor Degree</i>
-                  <h3><i class="fa fa-building-o ic-re" ></i> Design University</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                </li>-->
-              </ul><!-- end resume list-->
-              <h2 class="title"><span>Employment</span></h2>
-              <div class="white-space-10" ></div>
-              <!-- resume list-->
-              <ul class="resume-list">
-                  <li>
-                      <h4><i class="fa fa-calendar ic-re"></i> December 2019 - Present </h4>
-                      <i>
-                          <b>
-                              Software engineer - II
-                          </b>
-                      </i>
-                      <h3><i class="fa fa-building-o ic-re"></i>Microchip Technology, Bangalore</h3>
-                      <p></p>
-                  </li>
-                  <li>
-                      <h4><i class="fa fa-calendar ic-re"></i> March 2019 - November 2019 </h4>
-                      <i>
-                          <b>
-                              Senior software engineer
-                          </b>
-                      </i>
-                      <h3><i class="fa fa-building-o ic-re"></i>Prime Focus Technologies, Bangalore</h3>
-                      <p></p>
-                  </li>
-                  <li>
-                      <h4><i class="fa fa-calendar ic-re"></i> April 2018 - February 2019 </h4>
-                      <i>
-                          <b>
-                              Senior software engineer
-                          </b>
-                      </i>
-                      <h3><i class="fa fa-building-o ic-re"></i>Vyshnavi Information Technologies, Bangalore</h3>
-                      <p></p>
-                  </li>
-                  <li>
-                      <h4><i class="fa fa-calendar ic-re"></i> October 2014- March 2018<i>(3 years, 4 months)</i> </h4>
-                      <i>
-                          <b>Software engineer</b>
-                      </i>
-                      <h3><i class="fa fa-building-o ic-re"></i>Vyshnavi Information Technologies, Bangalore</h3>
-                      <p></p>
-                  </li>
-              </ul><!-- end resume list-->
-              <h2 class="title"><span>Skills</span></h2>
-              <!-- skills -->
-              <div class="row">
-                <div class="col-md-6">
-                  <!--<h3 class="title-2">Web Designer</h3>-->
-                  <ul class="list-unstyled list-progress">
-                    <li>
-                      <h4>C# .net <small>80%</small></h4>
-                      <div class="progress-line">
-                        <div class="line" data-holdwidth="80%" ></div>
-                      </div>
-                    </li>
-                    <li>
-                      <h4>CSS3   <small>70%</small></h4>
-                      <div class="progress-line">
-                        <div class="line" data-holdwidth="70%" ></div>
-                      </div>
-                    </li>
-                    <li>
-                      <h4>HTML5   <small>90%</small></h4>
-                      <div class="progress-line">
-                        <div class="line" data-holdwidth="90%" ></div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <!--<h3 class="title-2">Web Development</h3>-->
-                  <ul class="list-unstyled list-progress">
-                    <li>
-                      <h4><span>Asp .net MVC, Entity framework, Linq  </span>   <small>80%</small></h4>
-                      <div class="progress-line">
-                        <div class="line" data-holdwidth="80%"></div>
-                      </div>
-                    </li>
-                    <li>
-                      <h4>Javascript, Angular js, Jquery  <small>80%</small></h4>
-                      <div class="progress-line">
-                        <div class="line" data-holdwidth="80%"></div>
-                      </div>
-                    </li>
-                    <li>
-                      <h4>SQL    <small>70%</small></h4>
-                      <div class="progress-line">
-                        <div class="line" data-holdwidth="70%" ></div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div><!-- skills -->
-
-              <!-- soft skills -->
-              <h3 class="title-2">Soft Skills</h3>
-              <div class="clearfix text-center" >
-                <div class="col-md-3 col-sm-6 col-xs-6  no-padding">
-                  <div class="mb30">
-                    <div class="chart" data-percent="87"><span class="percent"></span></div>
-                    <h4>Creative   </h4>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6  col-xs-6 no-padding">
-                  <div class="mb30">
-                    <div class="chart" data-percent="73"><span class="percent"></span></div>
-                    <h4>Leadership   </h4>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6  no-padding">
-                  <div class="mb30">
-                    <div class="chart" data-percent="80"><span class="percent"></span></div>
-                    <h4>Communication </h4>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 no-padding">
-                  <div class="mb30">
-                    <div class="chart" data-percent="90"><span class="percent"></span></div>
-                    <h4>Confident </h4>
-                  </div>
-                </div>
-              </div><!-- end soft skills -->
-            </div>
-          </div>
-        </section><!-- end resume section-->
-
-        <!-- start portfolio section-->
-        <section id="portfolio" >
-
-          <!-- filter portfolio -->
-          <div class="section-padd br-t bg2" >
-            <div class="container-body clearfix">
-              <h2 class="title dark"><span>My Works</span><i> - uploading soon</i></h2>
-              <ul class="list-inline list-filter-galery">
-                <li class="active" data-filter="*"><a href="#">All</a></li>
-                <li data-filter=".img"><a href="#" >Image</a></li>
-                <li data-filter=".gal"><a href="#">Gallery</a></li>
-                <li data-filter=".vid"><a href="#">Video</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- grid portfolio -->
-          <div class="galery-box clearfix bg2">
-            <div class="col-sm-3 col-xs-6 item-box img">
-              <div class="hover-area">
-                <div class="text-vcenter-area">
-                  <div class="text-vcenter">
-                    <h3><a href="works/work-1.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
-                  </div>  
-                </div>
-              </div>
-              <img src="assets/theme/img/thumb/1.jpg" alt="">
-            </div>
-            <div class="col-sm-3 col-xs-6 item-box gal">
-              <div class="hover-area">
-                <div class="text-vcenter-area">
-                  <div class="text-vcenter">
-                    <h3><a href="works/work-galery.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
-                  </div>  
-                </div>
-              </div>
-              <div id="bs-gslider1" class="carousel slide carousel-fade" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <img src="assets/theme/img/thumb/2.jpg" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="assets/theme/img/thumb/3.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-6 item-box vid">
-              <div class="hover-area">
-                <div class="text-vcenter-area">
-                  <div class="text-vcenter">
-                    <h3><a href="works/work-vimeo.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
-                  </div>  
-                </div>
-              </div>
-              <img src="assets/theme/img/thumb/4.jpg" alt="">
-            </div>
-            <div class="col-sm-3 col-xs-6 item-box vid">
-              <div class="hover-area">
-                <div class="text-vcenter-area">
-                  <div class="text-vcenter">
-                    <h3><a href="works/work-youtube.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
-                  </div>  
-                </div>
-              </div>
-              <img src="assets/theme/img/thumb/5.jpg" alt="">
-            </div>
-            <div class="col-sm-3 col-xs-6 item-box img">
-              <div class="hover-area">
-                <div class="text-vcenter-area">
-                  <div class="text-vcenter">
-                    <h3><a href="works/work-image.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
-                  </div>  
-                </div>
-              </div>
-              <img src="assets/theme/img/thumb/6.jpg" alt="">
-            </div>
-            <div class="col-sm-3 col-xs-6 item-box img">
-              <div class="hover-area">
-                <div class="text-vcenter-area">
-                  <div class="text-vcenter">
-                    <h3><a href="works/work-image.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
-                  </div>
-                </div>
-              </div>
-              <img src="assets/theme/img/thumb/7.jpg" alt="">
-            </div>
-            <div class="col-sm-3 col-xs-6 item-box gal">
-              <div class="hover-area">
-                <div class="text-vcenter-area">
-                  <div class="text-vcenter">
-                    <h3><a  href="works/work-galery.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
-                  </div>  
-                </div>
-              </div>
-              <div id="bs-gslider2"  class="carousel slide carousel-fade" data-ride="carousel" data-interval="4010">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <img src="assets/theme/img/thumb/8.jpg" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="assets/theme/img/thumb/9.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-6 item-box img">
-              <div class="hover-area">
-                <div class="text-vcenter-area">
-                  <div class="text-vcenter">
-                    <h3><a href="works/work-image.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
-                  </div>  
-                </div>
-              </div>
-              <img src="assets/theme/img/thumb/10.jpg" alt="">
-            </div>
-            <div class="col-sm-3 col-xs-6 item-box vid">
-              <div class="hover-area">
-                <div class="text-vcenter-area">
-                  <div class="text-vcenter">
-                    <h3><a href="works/work-youtube.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
-                  </div>  
-                </div>
-              </div>
-              <img src="assets/theme/img/thumb/11.jpg" alt="">
-            </div>
-            <div class="col-sm-3 col-xs-6 item-box gal">
-              <div class="hover-area">
-                <div class="text-vcenter-area">
-                  <div class="text-vcenter">
-                    <h3><a href="works/work-galery.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
-                  </div>  
-                </div>
-              </div>
-              <div id="bs-gslider3"  class="carousel slide carousel-fade" data-ride="carousel" data-interval="3010">
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <img src="assets/theme/img/thumb/12.jpg" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="assets/theme/img/thumb/13.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-6 item-box img">
-              <div class="hover-area">
-                <div class="text-vcenter-area">
-                  <div class="text-vcenter">
-                    <h3><a href="works/work-image.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
-                  </div>
-                </div>
-              </div>
-              <img src="assets/theme/img/thumb/14.jpg" alt="">
-            </div>
-            <div class="col-sm-3 col-xs-6 item-box vid">
-              <div class="hover-area">
-                <div class="text-vcenter-area">
-                  <div class="text-vcenter">
-                    <h3><a href="works/work-vimeo.html" class="link-work">Project Title <i class="fa fa-link"></i></a></h3>
-                  </div>
-                </div>
-              </div>
-              <img src="assets/theme/img/thumb/15.jpg" alt="">
-            </div>
-          </div>
-          <!-- end grid portfolio -->
-
-          <!-- team -->
-          <!--<div class="section-padd br-b bg2" >
-            <div class="container-body clearfix">
-              <h2 class="title dark"><span>My Team</span></h2>
-              <div class="white-space-10"></div>
-              <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="team-box">
-                    <img src="assets/theme/img/people/10.jpg" alt="" >
-                    <h4>Jhoanes Yuneuz</h4>
-                    <p>Programmer</p>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="team-box">
-                    <img src="assets/theme/img/people/11.jpg" alt="" >
-                    <h4>Rose Luxyu</h4>
-                    <p>Marketer</p>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="team-box">
-                    <img src="assets/theme/img/people/12.jpg" alt="" >
-                    <h4>Eric Sukarto</h4>
-                    <p>Documenter</p>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="team-box">
-                    <img src="assets/theme/img/people/13.jpg" alt="" >
-                    <h4>Andred Grick</h4>
-                    <p>Analytics</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>-->
-          <!-- end team -->
-
-
-          <div class="section-padd">
-            <div class="container-body clearfix">
-              <!-- recent client -->  
-              <h2 class="title"><span>Recent Clients</span></h2>
-              <div class="white-space-10"></div>
-              <ul class="list-inline text-center list-force-img clearfix">
-                  <li><a href="#"><img src="assets/theme/img/patner/8.png" alt=""></a></li>
-                  <li><a href="#"><img src="assets/theme/img/patner/7.jpg" alt=""></a></li>
-                  <li><a href="#"><img src="assets/theme/img/patner/6.png" alt=""></a></li>
-
-                  <!--<li><a href="#"><img src="assets/theme/img/patner/1.png" alt=""></a></li>
-                  <li><a href="#"><img src="assets/theme/img/patner/2.png" alt=""></a></li>
-                  <li><a href="#"><img src="assets/theme/img/patner/3.png" alt=""></a></li>
-                  <li><a href="#"><img src="assets/theme/img/patner/4.png" alt=""></a></li>
-                  <li><a href="#"><img src="assets/theme/img/patner/5.png" alt=""></a></li>-->
-              </ul>
-              <!-- recent client -->
-
-              <!-- testimonial -->  
-              <!--<h2 class="title"><span>Testimonial</span></h2>
-              <div class="white-space-10"></div>
-              <ul class="list-unstyled list-testimonial clearfix">
-                <li>
-                  <img src="assets/theme/img/people/1.jpg" alt="" class="img-thumbnail img-circle">
-                  <div class="text-testimonial">
-                    <h3>No One Only You 
-                      <small class="ratting">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-empty"></i>
-                        <span>(4.5/5)</span>
-                      </small>
-                    </h3>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor. Phasellus viverra nulla ut metus varius laoreet.
-                    <h4>Margaret Lubt - <small>Founder  <a href="#"><i class="fa fa-globe"></i> www.website.com</a></small></h4>
-                  </div>
-                </li>
-                <li>
-                  <img src="assets/theme/img/people/2.jpg" alt="" class="img-thumbnail img-circle">
-                  <div class="text-testimonial">
-                    <h3>Amazing Team
-                      <small class="ratting">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-empty"></i>
-                        <span>(4.5/5)</span>
-                      </small>
-                    </h3>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor. Phasellus viverra nulla ut metus varius laoreet.
-                    <h4>Tony Struck - <small>Founder  <a href="#"><i class="fa fa-globe"></i> www.website.com</a></small></h4>
-                  </div>
-                </li>
-                <li>
-                  <img src="assets/theme/img/people/3.jpg" alt="" class="img-thumbnail img-circle">
-                  <div class="text-testimonial">
-                    <h3>Good Job Guys
-                      <small class="ratting">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-empty"></i>
-                        <span>(4.5/5)</span>
-                      </small>
-                    </h3>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor. Phasellus viverra nulla ut metus varius laoreet.
-                    <h4>Geisha Rose - <small>Founder  <a href="#"><i class="fa fa-globe"></i> www.website.com</a></small></h4>
-                  </div>
-                </li>
-              </ul>-->
-              <!-- end testimonial -->
-            </div>
-          </div>
-
-          <!-- service -->
-          <!--<div class="section-padd br-t br-b bg2" >
-            <div class="container-body clearfix">
-              <h2 class="title dark"><span>Services</span></h2>
-              <div class="white-space-10"></div>
-              <div class="row">
-                <div class="col-md-4 col-sm-4">
-                  <div class="box-service">
-                    <div class="ic"><i class="fa fa-pencil "></i></div>
-                    <h3>Design</h3>
-                    <ul>
-                      <li>Planing</li>
-                      <li>Design</li>
-                      <li>Develop</li>
-                      <li>Deploy Product</li>
-                    </ul>
-                    <div class="price">$130$-$900</div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                  <div class="box-service">
-                    <div class="ic"><i class="fa fa-desktop "></i></div>
-                    <h3>Web Apps</h3>
-                    <ul>
-                      <li>Planing</li>
-                      <li>Design</li>
-                      <li>Develop</li>
-                      <li>Deploy Product</li>
-                    </ul>
-                    <div class="price">$2050-$3600</div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                  <div class="box-service">
-                    <div class="ic"><i class="fa fa-gamepad "></i></div>
-                    <h3>Game Apps</h3>
-                    <ul>
-                      <li>Planing</li>
-                      <li>Design</li>
-                      <li>Develop</li>
-                      <li>Deploy Product</li>
-                    </ul>
-                    <div class="price">$1050-$2600</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>-->
-          <!-- end service -->
-        </section><!-- end portfolio section -->
-
-        <!-- start contact section -->
-        <section id='contact'>
-
-          <!-- map -->
-            <div class="map-area  br-t br-b">
-                <!-- change data-lat="48.856318" data-lng="2.351866" with your location-->
-                <div class="map" id="map" data-lat="13.013272" data-lng="77.708658"></div>
-                <div class="map-scroll-space"></div>
-                <div class="map-wait-msg">Plase Wait...</div>
-                <div class="map-detail-location">
-                    <h4>Location:</h4>
-                    <p>#77, Swathi Nilaya, 3rd Phase, Gayatri layout, KR Pura, Bangalore, Karnataka - 560036, India.</p>
-                </div>
-            </div><!-- end map -->
-
-          <!-- contact form -->
-          <div class="section-padd">
-            <div class="container-body clearfix">
-              <h2 class="title dark"><span>Let's Talk About <small id='show-subject'>...</small> <small><a href="#" class="fire-toogle-subject mini-arrow"><i class="fa fa-angle-down"></i></a></small></span></h2>
-              <div class="dropdown top-min">
-                <a href="#" data-toggle="dropdown" id='toogle-subject'></a>
-                <ul class="dropdown-menu" id="option_subject" >
-                  <li><a href="#">The Next Project</a></li>
-                  <li><a href="#">The Next Design</a></li>
-                  <li><a href="#">The Next Mobile Apps</a></li>
-                  <li><a href="#">Say Hi</a></li>
-                </ul>
-              </div>
-              <div class="white-space-10"></div>
-              <form method="post" id="ContactForm" name="contactForm" class="validate-form">
-                <input type="hidden" name="subject" value="" id='subject_contact'>
-                <input type="hidden" name="file" id="file-att" value="">
-                <div class="form-group">
-                  <label>Your Name (*)</label>
-                  <input type="text" class="form-control form-flat" name="fullname" required>
-                </div>
-                <div class="form-group">
-                  <label>Email (*)</label>
-                  <input type="email" class="form-control form-flat" name="email" required>
-                </div>
-                <div class="form-group">
-                  <label>Your Message (*)</label>
-                  <textarea class="form-control form-flat" name="message" rows="8"  required></textarea>
-                </div>
-
-                <div class="hold-feature uploader-hold">
-                  <div class="form-group">
-                    <label>Attach Your Document (Optional) <span class="display-block ">(only .pdf  allowed , max size 2Mb)</span></label>
-                    <div class="clearfix">						
-                      <input type="button" id="upload-btn" class="btn  btn-file btn-xs btn-default clearfix" value="Choose file">
-                      <div id="errormsg" class="clearfix error"></div>	              
-                      <div id="pic-progress-wrap" class="progress-wrap"></div>	
-                      <div id="picbox" class="attbox "></div>
+                    <div class="col-md-3 col-xs-6 no-padding">
+                        <div class="desc-mini">
+                            <div class="mid-desc-mini">
+                                <h3><a href="https://www.facebook.com/gcnaveenkumar" class="black-link" target="_blank">&nbsp;<i class="fa fa-facebook"></i> &nbsp;</a></h3>
+                                <p><a href="https://www.facebook.com/gcnaveenkumar" class="black-link" target="_blank">Facebook</a></p>
+                            </div>
+                        </div>
                     </div>
-                  </div>  
-                </div>
-
-                <div class="hold-feature captcha-hold">
-                  <div class="form-group">
-                    <!-- generate captcha -->
-                    <div id="mycaptcha-wrap" class="mycaptcha1">
-                      <div id="mycaptcha" class="mycaptcha1"></div>
+                    <div class="col-md-3 col-xs-6 no-padding">
+                        <div class="desc-mini">
+                            <div class="mid-desc-mini">
+                                <h3><a href="https://twitter.com/gcnaveenkumar" class="black-link" target="_blank">&nbsp;<i class="fa fa-twitter"></i>&nbsp;</a></h3>
+                                <p><a href="https://twitter.com/gcnaveenkumar" class="black-link" target="_blank">Twitter</a></p>
+                            </div>
+                        </div>
                     </div>
-                  </div>  
-                </div>
 
+                </div><!-- end social links -->
 
-                <div class="form-group">
-                    <button type="submit" class="btn btnc2 with-br ">
-                        <span>Send This Message</span>
-                    </button>
-                    <i> Please use email me option. this functionality is still under development</i>
-                </div>
-
-                <div class="form-group">
-                  <!-- aja msg -->
-                  <div class="preload-submit hidden"><hr/> <i class="fa fa-spinner fa-spin"></i> Please Wait ...</div>
-                  <div class="message-submit error hidden"></div>
-                </div>
-              </form>
-            </div>
-          </div><!-- end contact form -->
-
-          <!-- social links -->
-          <div class="clearfix br-t">
-              <div class="col-md-3 col-xs-6 no-padding">
-                  <div class="desc-mini no-br-l">
-                      <div class="mid-desc-mini">
-                          <h3><a href="https://www.linkedin.com/in/naveen-kumar-gc-a3455554/" class="black-link" target="_blank">&nbsp;<i class="fa fa-linkedin"></i>&nbsp;</a></h3>
-                          <p><a href="https://www.linkedin.com/in/naveen-kumar-gc-a3455554/" class="black-link" target="_blank">LinkedIn</a></p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3 col-xs-6 no-padding">
-                  <div class="desc-mini">
-                      <div class="mid-desc-mini">
-                          <h3><a href="https://stackoverflow.com/users/4226224/naveen-kumar-g-c" class="black-link" target="_blank">&nbsp;<i class="fa fa-stack-overflow"></i> &nbsp;</a></h3>
-                          <p><a href="https://stackoverflow.com/users/4226224/naveen-kumar-g-c" class="black-link" target="_blank">Stack Overflow</a></p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3 col-xs-6 no-padding">
-                  <div class="desc-mini">
-                      <div class="mid-desc-mini">
-                          <h3><a href="https://www.facebook.com/gcnaveenkumar" class="black-link" target="_blank">&nbsp;<i class="fa fa-facebook"></i> &nbsp;</a></h3>
-                          <p><a href="https://www.facebook.com/gcnaveenkumar" class="black-link" target="_blank">Facebook</a></p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3 col-xs-6 no-padding">
-                  <div class="desc-mini">
-                      <div class="mid-desc-mini">
-                          <h3><a href="https://twitter.com/gcnaveenkumar" class="black-link" target="_blank">&nbsp;<i class="fa fa-twitter"></i>&nbsp;</a></h3>
-                          <p><a href="https://twitter.com/gcnaveenkumar" class="black-link" target="_blank">Twitter</a></p>
-                      </div>
-                  </div>
-              </div>
-
-          </div><!-- end social links -->
-
-        </section><!-- end contact section -->
-      </div><!-- end Content body -->
-
-      <!-- footer -->
-      <footer class="main-footer">
-        Last updated on 12/12/2018 10:40 AM
-      </footer><!-- footer -->
+            </section><!-- end contact section -->
+        </div><!-- end Content body -->
+        <!-- footer -->
+        <footer class="main-footer">
+            Last updated on 10/04/2025 03:53 PM
+        </footer><!-- footer -->
     </div><!-- body-area -->
-
-
     <!-- portfolio details ajax -->
     <div class="over-fly-area" id="load-works">
-      <div class="inner-overfly" id="work-wait-msg">
-        <div class="middle-overfly">
-          <h2 class="title-over">PLASE WAIT...</h2>
+        <div class="inner-overfly" id="work-wait-msg">
+            <div class="middle-overfly">
+                <h2 class="title-over">PLASE WAIT...</h2>
+            </div>
         </div>
-      </div>
-      <div class="work-close"><a href="#" class="close-panel-work btn btn-xs btn-default" >Close</a></div>
-      <div id="load-work-html" ></div>
+        <div class="work-close"><a href="#" class="close-panel-work btn btn-xs btn-default">Close</a></div>
+        <div id="load-work-html"></div>
     </div>
     <!-- Modal Example-->
     <div class="modal fade" id="modal-example" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Extra Pages</h4>
-          </div>
-          <div class="modal-body">
-            <ul class="list-boxpage">
-              <li><a href="blog-list-posts.html" class="open-link">Blog List Post</a></li>
-              <li><a href="blog-single-post.html" class="open-link">Blog Single Post</a></li>
-              <li><a href="404.html" class="open-link">404 error</a></li>
-              <li><a href="cooming-soon.html" class="open-link">Cooming Soon</a></li>
-              <li><a href="theme-element.html" class="open-link">Theme Element</a></li>
-            </ul>
-          </div>
-          <div class="modal-footer">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Extra Pages</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-boxpage">
+                        <li><a href="blog-list-posts.html" class="open-link">Blog List Post</a></li>
+                        <li><a href="blog-single-post.html" class="open-link">Blog Single Post</a></li>
+                        <li><a href="404.html" class="open-link">404 error</a></li>
+                        <li><a href="cooming-soon.html" class="open-link">Cooming Soon</a></li>
+                        <li><a href="theme-element.html" class="open-link">Theme Element</a></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
 
-            <a href="#" class="btn btnc2 with-br " ><span>Buy This Theme</span></a>
-          </div>
+                    <a href="#" class="btn btnc2 with-br "><span>Buy This Theme</span></a>
+                </div>
+            </div>
         </div>
-      </div>
     </div><!-- end  Modal Example-->
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="assets/external/jquery.min.js"></script>
-    <script src="assets/external/jquery.easing-1.3.pack.js"></script>
+    <script src="assets/external/jquery.min.js?v=1.0.1"></script>
+    <script src="assets/external/jquery.easing-1.3.pack.js?v=1.0.1"></script>
 
     <!-- Include all compiled plugins (below)-->
-    <script src="assets/external/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/external/jquery.easypiechart.min.js"></script>
-    <script src="assets/external/isotope.pkgd.min.js"></script>
-    <script src="assets/external/validator/jquery.validate.min.js"></script>
-    <script src="assets/external/simpleCaptcha/jquery.simpleCaptcha.js"></script>
-    <script src="assets/external/Simple-Ajax-Uploader/SimpleAjaxUploader.min.js"></script>
-    <script src="assets/external/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="assets/external/metisMenu/metisMenu.js"></script>
+    <script src="assets/external/bootstrap/js/bootstrap.min.js?v=1.0.1"></script>
+    <script src="assets/external/jquery.easypiechart.min.js?v=1.0.1"></script>
+    <script src="assets/external/isotope.pkgd.min.js?v=1.0.1"></script>
+    <script src="assets/external/validator/jquery.validate.min.js?v=1.0.1"></script>
+    <script src="assets/external/simpleCaptcha/jquery.simpleCaptcha.js?v=1.0.1"></script>
+    <script src="assets/external/Simple-Ajax-Uploader/SimpleAjaxUploader.min.js?v=1.0.1"></script>
+    <script src="assets/external/magnific-popup/jquery.magnific-popup.min.js?v=1.0.1"></script>
+    <script src="assets/external/metisMenu/metisMenu.js?v=1.0.1"></script>
 
-    <!-- theme config --> 
-    <script src="assets/theme/js/theme.js"></script>
+    <!-- theme config -->
+    <script src="assets/theme/js/theme.js?v=1.0.1"></script>
 
-    <!-- map --> 
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script> 
-    <script src="assets/external/gmap3.min.js"></script>
-    <script src="assets/theme/js/map.js"></script>
-  </body>
+    <!-- map -->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script src="assets/external/gmap3.min.js?v=1.0.1"></script>
+    <script src="assets/theme/js/map.js?v=1.0.1"></script>
+
+    <!-- Include the latest EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js?v=1.0.1"></script>
+    <script>
+
+        // Initialize EmailJS with your Public ID
+        (function () {
+            emailjs.init("J3q5dhNMa1OKYnRr-"); // Replace with your Public ID
+        })();
+
+        // Handle form submission
+        document.getElementById("ContactForm").addEventListener("submit", function (event) {
+
+        });
+
+        function downloadLatestPdf() {
+            showLoader();
+            const webAppUrl = "https://script.google.com/macros/s/AKfycbx7EDInoXhjr_gF57yLQx8Q8EXtokLoduMpzh4PXJqwfriGH-CTvsrNOqc9VQbpxqVH/exec"; // Replace with your web app URL
+
+            fetch(webAppUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.text(); // Get the response as text
+                })
+                .then(pdfUrl => {
+                    // Create a hidden anchor element
+                    const link = document.createElement("a");
+                    link.href = pdfUrl;
+                    link.download = "NaveenKumarGC-Resume.pdf"; // Set the desired filename
+                    link.style.display = "none";
+
+                    // Append the anchor to the document and trigger the download
+                    document.body.appendChild(link);
+                    link.click();
+                    hideLoader();
+                    // Remove the anchor element
+                    document.body.removeChild(link);
+                })
+                .catch(error => {
+                    hideLoader();
+                    console.error("Error downloading PDF:", error);
+                    alert("Failed to download resume. Please try again.");
+                });
+        }
+
+        function showLoader() {
+            document.querySelector('.loader-overlay').classList.remove('hide');
+            document.querySelector('.loader-overlay').classList.add('show');
+            document.querySelector('.loader').classList.remove('hide');
+            document.querySelector('.loader').classList.add('show');
+        }
+
+        function hideLoader() {
+            document.querySelector('.loader-overlay').classList.remove('show');
+            document.querySelector('.loader-overlay').classList.add('hide');
+            document.querySelector('.loader').classList.remove('show');
+            document.querySelector('.loader').classList.add('hide');
+        }
+    </script>
+</body>
 </html>
