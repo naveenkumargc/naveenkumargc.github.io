@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-accent="lime">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Naveen Kumar GC — Senior Software Engineer · AI &amp; Full-stack</title>
+  <meta name="description" content="Naveen Kumar GC — Senior Software Engineer in Bengaluru shipping enterprise software since 8 October 2014. ERP at scale, AI agents, RAG and full-stack .NET.">
+  <meta name="author" content="Naveen Kumar GC">
+  <meta name="theme-color" content="#0A0A0B">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Naveen Kumar GC — Senior Software Engineer">
+  <meta property="og:description" content="Twelve years of shipping enterprise software. Now weaving intelligence into it.">
+  <meta property="og:image" content="assets/img/hero-poster.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230A0A0B'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='700' font-size='28' fill='%23C6FF3D'%3ENK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('nkgc-theme');
+        var a = localStorage.getItem('nkgc-accent');
+        if (t === 'dark' || t === 'light') d.setAttribute('data-theme', t);
+        if (a && /^(lime|cyan|amber|violet|coral)$/.test(a)) d.setAttribute('data-accent', a);
+      } catch (e) {}
+      var reduced = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduced) d.classList.add('rm');
+      var seen = false;
+      try { seen = sessionStorage.getItem('nkgc-booted') === '1'; } catch (e) {}
+      if (!reduced && !seen) d.classList.add('booting');
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Naveen Kumar GC",
+    "jobTitle": "Senior Software Engineer",
+    "worksFor": { "@type": "Organization", "name": "Microchip Technology" },
+    "alumniOf": "SJC Institute of Technology, Visvesvaraya Technological University",
+    "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
+    "email": "mailto:gc.naveen1@gmail.com",
+    "knowsLanguage": ["English", "Kannada", "Telugu", "Hindi"],
+    "sameAs": [
+      "https://www.linkedin.com/in/naveen-kumar-gc-a3455554/",
+      "https://stackoverflow.com/users/4226224/naveen-kumar-g-c",
+      "https://twitter.com/gcnaveenkumar"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <pre class="loader__log" id="bootLog"></pre>
+      <div class="loader__row"><span>naveen.runtime</span><span id="bootPct">0%</span></div>
+      <div class="loader__bar"><i id="bootBar"></i></div>
+    </div>
+  </div>
+
+  <div class="cursor" aria-hidden="true">
+    <i class="cursor__dot"></i>
+    <i class="cursor__ring"><span class="cursor__label"></span></i>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" aria-label="Naveen Kumar GC — back to top">NK<span>GC</span></a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#journey">Journey</a>
+      <a href="#ai">AI</a>
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#proof">Proof</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__tools">
+      <a class="nav__cta magnetic" href="assets/docs/Naveen-Kumar-GC-Resume.pdf" download>Résumé <span aria-hidden="true">↓</span></a>
+      <button class="tool" id="paletteBtn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="palette" title="Colours">
+        <span class="swatch-dot" aria-hidden="true"></span><span class="sr-only">Choose colours</span>
+      </button>
+      <button class="tool" id="themeBtn" type="button" title="Toggle light / dark">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+        <span class="sr-only" id="themeLabel">Switch to light theme</span>
+      </button>
+    </div>
+
+    <div class="palette" id="palette" role="dialog" aria-label="Colour settings" hidden>
+      <p class="palette__label">Theme</p>
+      <div class="seg" role="group" aria-label="Theme">
+        <button type="button" data-set-theme="dark">Dark</button>
+        <button type="button" data-set-theme="light">Light</button>
+      </div>
+      <p class="palette__label">Accent <span class="palette__name" id="accentName">Lime</span></p>
+      <div class="swatches" role="group" aria-label="Accent colour">
+        <button type="button" data-set-accent="lime" style="--sw-d:#C6FF3D;--sw-l:#3F6212" aria-label="Lime"></button>
+        <button type="button" data-set-accent="cyan" style="--sw-d:#3DF5FF;--sw-l:#0E7490" aria-label="Cyan"></button>
+        <button type="button" data-set-accent="amber" style="--sw-d:#FFB23D;--sw-l:#92400E" aria-label="Amber"></button>
+        <button type="button" data-set-accent="violet" style="--sw-d:#B69CFF;--sw-l:#6D28D9" aria-label="Violet"></button>
+        <button type="button" data-set-accent="coral" style="--sw-d:#FF7A5C;--sw-l:#B93A12" aria-label="Coral"></button>
+      </div>
+      <p class="palette__hint">Each swatch shows its dark ◐ light pair. Your choice is remembered.</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 01 · HERO -->
+    <section class="hero" id="top" aria-label="Introduction">
+      <div class="hero__sticky">
+        <div class="hero__frame" id="heroFrame" data-cursor="sound">
+          <video id="heroVideo" src="assets/video/naveen-hero.mp4" poster="assets/img/hero-poster.jpg" autoplay muted loop playsinline preload="auto" aria-label="Naveen Kumar GC introducing himself"></video>
+          <div class="hero__shade" id="heroShade"></div>
+          <button class="sound" id="soundBtn" type="button" aria-pressed="false">
+            <span class="sound__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span class="sound__text">Sound on</span>
+          </button>
+        </div>
+
+        <h1 class="hero__name" aria-label="Naveen Kumar GC">
+          <span class="hero__first" id="heroFirst" aria-hidden="true">Naveen</span>
+          <span class="hero__last" id="heroLast" aria-hidden="true">Kumar&nbsp;GC</span>
+        </h1>
+
+        <div class="hero__meta" id="heroMeta">
+          <p class="hero__role">Senior Software Engineer<br><span class="muted">AI · Full-stack · Bengaluru</span></p>
+          <p class="uptime"><span class="pulse" aria-hidden="true"></span>uptime <b data-uptime>12y 01m 00d 00:00:00</b></p>
+          <p class="uptime__since muted">running since 08 · 10 · 2014</p>
+        </div>
+
+        <div class="hero__hint" id="heroHint" aria-hidden="true"><span>scroll</span><i></i></div>
+
+        <div class="hero__story" id="heroStory">
+          <p class="eyebrow">// about.md</p>
+          <p class="hero__lead" id="storyText">I'm Naveen — a <em>Senior Software Engineer</em> who has spent over a decade turning tangled business processes into calm, dependable software. From order systems that move <em>millions of orders a day</em> to AI agents that catch problems before they ship, I build things that make teams faster — and I weave <em>intelligence</em> wherever it earns its place.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 · NUMBERS -->
+    <section class="numbers" aria-label="At a glance">
+      <div class="stats">
+        <div class="stat" data-reveal><b><span data-count="12" data-years>0</span><sup>+</sup></b><span>years shipping production software</span></div>
+        <div class="stat" data-reveal><b><span data-count="4">0</span></b><span>roles across 3 companies, zero gaps</span></div>
+        <div class="stat" data-reveal><b><span data-count="15">0</span><sup>+</sup></b><span>products designed, built &amp; supported</span></div>
+        <div class="stat" data-reveal><b class="stat__word">M<sup>+</sup></b><span>orders a day flowing through FeSO</span></div>
+        <div class="stat" data-reveal><b><span data-count="4">0</span></b><span>spoken languages — and many more typed</span></div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>C# <i>✦</i> .NET <i>✦</i> RAG <i>✦</i> AI Agents <i>✦</i> Oracle <i>✦</i> React <i>✦</i> Angular <i>✦</i> MS SQL <i>✦</i> Azure <i>✦</i> d3 <i>✦</i> </span>
+          <span>C# <i>✦</i> .NET <i>✦</i> RAG <i>✦</i> AI Agents <i>✦</i> Oracle <i>✦</i> React <i>✦</i> Angular <i>✦</i> MS SQL <i>✦</i> Azure <i>✦</i> d3 <i>✦</i> </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 · JOURNEY -->
+    <section class="journey" id="journey" aria-labelledby="journey-title">
+      <div class="journey__sticky">
+        <header class="journey__head">
+          <p class="eyebrow">// git log --career --since=2010</p>
+          <h2 class="h2" id="journey-title">One unbroken commit history.</h2>
+        </header>
+        <div class="journey__viewport">
+          <ol class="journey__track" id="journeyTrack">
+            <li class="journey__rail" aria-hidden="true"><i id="journeyFill"></i></li>
+            <li class="milestone">
+              <p class="milestone__hash">commit 0a1b2c3 · <span>init</span></p>
+              <time>2010 — 2014</time>
+              <h3>Bachelor of Engineering, CSE</h3>
+              <p class="milestone__org">SJC Institute of Technology · VTU, Chikkaballapur</p>
+              <p>Graduated with honours in Computer Science &amp; Engineering — C, C++ and the fundamentals that still pay rent.</p>
+            </li>
+            <li class="milestone milestone--key">
+              <p class="milestone__hash">commit 8a10f14 · <span>v1.0.0</span></p>
+              <time datetime="2014-10-08">08 Oct 2014</time>
+              <h3>Hello, World.</h3>
+              <p class="milestone__org">Software Engineer · Vyshnavi Information Technologies</p>
+              <p>Day one. Within months: a cross-platform Cordova app, a satellite contour plotter and a live social-media photo wall.</p>
+            </li>
+            <li class="milestone">
+              <p class="milestone__hash">commit c0ffee1 · <span>every-hat</span></p>
+              <time>2014 — 2018</time>
+              <h3>Management → BA → Dev → QA → Deploy</h3>
+              <p class="milestone__org">Global research &amp; innovation client</p>
+              <p>Approval workflows, e-consent, expenses, org charts — designed, built, deployed on IIS and supported end-to-end.</p>
+            </li>
+            <li class="milestone">
+              <p class="milestone__hash">commit 5e2018a · <span>v2.0.0</span></p>
+              <time datetime="2018-04">Apr 2018</time>
+              <h3>Senior Software Engineer</h3>
+              <p class="milestone__org">Vyshnavi Information Technologies</p>
+              <p>Grew team leads, set standards, mentored, and ran releases across QA and production — stack, firewall and monitoring included.</p>
+            </li>
+            <li class="milestone">
+              <p class="milestone__hash">commit f0c5d19 · <span>media</span></p>
+              <time datetime="2019-03">Mar 2019</time>
+              <h3>Senior Software Engineer</h3>
+              <p class="milestone__org">Prime Focus Technologies</p>
+              <p>Optimised media upload and download workflows for CLEAR, a cloud media asset management platform for M&amp;E companies.</p>
+            </li>
+            <li class="milestone milestone--key">
+              <p class="milestone__hash">commit d3c2019 · <span>v3.0.0</span></p>
+              <time datetime="2019-12">Dec 2019</time>
+              <h3>Senior Software Engineer</h3>
+              <p class="milestone__org">Microchip Technology</p>
+              <p>Owning MySO &amp; FeSO — the order-management backbone on Oracle/Baan that handles millions of orders a day.</p>
+            </li>
+            <li class="milestone milestone--key">
+              <p class="milestone__hash">commit a17e11c · <span>ai</span></p>
+              <time>Today</time>
+              <h3>Intelligence, woven in</h3>
+              <p class="milestone__org">Microchip Technology · AI &amp; agents</p>
+              <p>Agents, skills, a marketplace, RAG, virtual customer care — and a shipment-instruction checker that cuts delivery time.</p>
+            </li>
+            <li class="milestone milestone--head">
+              <p class="milestone__hash">HEAD → <span>main</span></p>
+              <time>Next</time>
+              <h3>Your project?</h3>
+              <p class="milestone__org">The next commit is unwritten.</p>
+              <p><a class="link-arrow" href="#contact">Let's talk <span aria-hidden="true">→</span></a></p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · AI -->
+    <section class="section ai" id="ai" aria-labelledby="ai-title">
+      <header class="shead" data-reveal>
+        <p class="eyebrow">// microchip.ai — 2019 → now</p>
+        <h2 class="h2" id="ai-title">Intelligence, woven in where it earns its place.</h2>
+        <p class="lead">At Microchip I went from keeping a complex ERP healthy to making it think — grounding AI in real order data so teams decide faster and orders ship sooner.</p>
+      </header>
+
+      <div class="ai__grid">
+        <div class="ai__demo-wrap" data-reveal>
+          <div class="demo" id="demo" role="img" aria-label="Illustration: an AI check finds two conflicting shipment instructions from different teams and routes them for resolution before dispatch.">
+            <div class="demo__bar">
+              <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>shipment-guard · order #48213</span>
+              <span class="demo__status" id="demoStatus">idle</span>
+            </div>
+            <div class="demo__body">
+              <div class="instr" style="--k:0"><b>Sales</b><span>Ship complete · Incoterm <mark data-c="a">DAP</mark></span></div>
+              <div class="instr" style="--k:1"><b>Planning</b><span>Partial OK · split into <mark data-c="b">2 lots</mark></span></div>
+              <div class="instr" style="--k:2"><b>Logistics</b><span>Incoterm <mark data-c="a">FCA</mark> · priority carrier</span></div>
+              <div class="instr" style="--k:3"><b>Customer</b><span><mark data-c="b">Single delivery</mark> · label with PO</span></div>
+              <div class="demo__scan" aria-hidden="true"></div>
+            </div>
+            <div class="demo__verdict">
+              <p class="verdict__idle">Waiting for instructions…</p>
+              <div class="verdict__done">
+                <p><span class="badge">2 discrepancies</span></p>
+                <p>Incoterm <b>DAP ≠ FCA</b> · <b>Split ≠ single delivery</b> → routed to owners before dispatch.</p>
+                <p class="ok">✓ Resolved upstream. No dock-side hold, shorter delivery time.</p>
+              </div>
+            </div>
+          </div>
+          <p class="demo__caption">Illustrative example — real data stays confidential.</p>
+        </div>
+
+        <ol class="ai__list">
+          <li class="ai-item" data-reveal>
+            <span class="ai-item__n">01</span>
+            <div><h3>Virtual Customer Care</h3>
+            <p>A conversational front door that answers order and shipment questions from live enterprise data — for customers and internal teams, around the clock.</p>
+            <ul class="tags"><li>LLM</li><li>RAG</li><li>Conversational UX</li></ul></div>
+          </li>
+          <li class="ai-item" data-reveal>
+            <span class="ai-item__n">02</span>
+            <div><h3>Agents &amp; Skills</h3>
+            <p>Purpose-built AI agents that carry out real ERP tasks, composed from small, reusable, governed skills instead of one giant prompt.</p>
+            <ul class="tags"><li>Agents</li><li>Tool calling</li><li>Skills</li></ul></div>
+          </li>
+          <li class="ai-item" data-reveal>
+            <span class="ai-item__n">03</span>
+            <div><h3>Agents Marketplace</h3>
+            <p>An internal marketplace where teams across Microchip discover, share and plug in agents and skills — build once, reuse everywhere.</p>
+            <ul class="tags"><li>Platform</li><li>Discovery</li><li>Reuse</li></ul></div>
+          </li>
+          <li class="ai-item ai-item--key" data-reveal>
+            <span class="ai-item__n">04</span>
+            <div><h3>Shipment Instruction Intelligence <span class="impact">↓ delivery time</span></h3>
+            <p>Final shipment instructions arrive from many internal teams. This app detects discrepancies and silent compromises before they reach the dock — cutting total delivery time.</p>
+            <ul class="tags"><li>Anomaly detection</li><li>LLM reasoning</li><li>ERP integration</li></ul></div>
+          </li>
+          <li class="ai-item" data-reveal>
+            <span class="ai-item__n">05</span>
+            <div><h3>RAG on enterprise knowledge</h3>
+            <p>Retrieval-augmented generation over internal documents and data, so answers are grounded, current and traceable — not guessed.</p>
+            <ul class="tags"><li>Embeddings</li><li>Vector search</li><li>Grounding</li></ul></div>
+          </li>
+          <li class="ai-item" data-reveal>
+            <span class="ai-item__n">06</span>
+            <div><h3>Generative video with Google Flow</h3>
+            <p>AI-generated video for product and internal storytelling — from script to finished clip in a fraction of the usual time.</p>
+            <ul class="tags"><li>Google Flow</li><li>GenAI media</li></ul></div>
+          </li>
+          <li class="ai-item" data-reveal>
+            <span class="ai-item__n">07</span>
+            <div><h3>Bots for existing apps</h3>
+            <p>Many small, sharp bots bolted onto existing applications — giving legacy tools a conversational interface without a rewrite.</p>
+            <ul class="tags"><li>Bots</li><li>Integration</li><li>Quick wins</li></ul></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 05 · WORK -->
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <header class="shead" data-reveal>
+        <p class="eyebrow">// selected work</p>
+        <h2 class="h2" id="work-title">Things I built that people still rely on.</h2>
+        <p class="lead">Client names are withheld — confidentiality matters as much as code.</p>
+      </header>
+
+      <div class="cards" id="cards">
+        <article class="card" style="--i:0">
+          <div class="card__text">
+            <p class="card__meta">2019 — present · Semiconductor ERP</p>
+            <h3>MySO &amp; FeSO</h3>
+            <p>Web and Windows systems on Oracle for Baan that run order management end-to-end. FeSO processes millions of orders a day; MySO creates order headers and lines. Windows services for Mass Cancel Rebook and Mass Upload automate cancellations, rebookings and returns.</p>
+            <p>Covers configurable parts, kits, bundles, fulfilment sets and direct delivery — with validations that keep complex datasets honest.</p>
+            <ul class="tags"><li>C#</li><li>.NET</li><li>Oracle</li><li>Baan</li><li>Windows Services</li></ul>
+          </div>
+          <div class="card__viz"><canvas data-viz="orders" aria-hidden="true"></canvas><span class="card__vizlabel">orders → validate → MCR / MU → ship</span></div>
+        </article>
+
+        <article class="card" style="--i:1">
+          <div class="card__text">
+            <p class="card__meta">2019 · Media &amp; Entertainment</p>
+            <h3>CLEAR Cloud MAM</h3>
+            <p>A holistic cloud media asset management platform connecting production, distribution, broadcast and OTT across global sites.</p>
+            <p>Led development and optimisation of complex upload and download workflows, with work-order automation orchestrating tasks, resources and assets.</p>
+            <ul class="tags"><li>Media workflows</li><li>Cloud</li><li>Orchestration</li></ul>
+          </div>
+          <div class="card__viz"><canvas data-viz="media" aria-hidden="true"></canvas><span class="card__vizlabel">ingest → transcode → deliver</span></div>
+        </article>
+
+        <article class="card" style="--i:2">
+          <div class="card__text">
+            <p class="card__meta">2017 — 2019 · Research &amp; Innovation</p>
+            <h3>Electronic Consent Forms</h3>
+            <p>Stores and processes confidential data for multiple user roles. ASP.NET MVC Web API with AngularJS, custom authentication and authorisation, WCF APIs for associated devices.</p>
+            <p>Camera capture, QR scanning, SVG signature pads, PDF generation with iTextSharp, Power BI reporting — and workarounds for officially confirmed IE bugs.</p>
+            <ul class="tags"><li>ASP.NET MVC</li><li>AngularJS</li><li>Entity Framework</li><li>SVG</li><li>Power BI</li></ul>
+          </div>
+          <div class="card__viz card__viz--sign">
+            <svg class="sig" viewBox="0 0 320 160" aria-hidden="true">
+              <path class="sig__line" d="M20 128 L300 122"/>
+              <path class="sig__path" d="M28 98 C 40 40, 62 30, 64 82 C 66 112, 78 104, 88 74 C 96 52, 104 54, 104 80 C 104 98, 116 96, 124 76 C 130 60, 140 62, 138 84 C 136 102, 150 98, 158 80 C 166 62, 178 60, 176 84 C 174 104, 192 98, 200 76 C 206 60, 220 58, 222 80 C 224 100, 238 96, 246 74 C 252 58, 262 62, 262 80 C 262 96, 280 92, 296 70"/>
+            </svg>
+            <ul class="chips" aria-hidden="true"><li>QR ✓</li><li>Camera ✓</li><li>Signature ✓</li><li>PDF ✓</li></ul>
+          </div>
+        </article>
+
+        <article class="card" style="--i:3">
+          <div class="card__text">
+            <p class="card__meta">2018 · Research &amp; Innovation</p>
+            <h3>Organogram</h3>
+            <p>An interactive hierarchy of the organisation and its management committee.</p>
+            <p>C# Active Directory APIs build the tree, a JSON serializer hands it to the browser, and d3 renders it exactly the way the client imagined.</p>
+            <ul class="tags"><li>d3</li><li>C#</li><li>Active Directory</li><li>JSON</li></ul>
+          </div>
+          <div class="card__viz card__viz--org">
+            <svg class="org" viewBox="0 0 300 210" aria-hidden="true">
+              <g class="org__links">
+                <path style="--d:.1s" d="M150 34 C150 64, 60 64, 60 96"/>
+                <path style="--d:.15s" d="M150 34 L150 96"/>
+                <path style="--d:.2s" d="M150 34 C150 64, 240 64, 240 96"/>
+                <path style="--d:.45s" d="M60 104 C60 134, 30 134, 30 166"/>
+                <path style="--d:.5s" d="M60 104 C60 134, 90 134, 90 166"/>
+                <path style="--d:.55s" d="M150 104 C150 134, 128 134, 128 166"/>
+                <path style="--d:.6s" d="M150 104 C150 134, 172 134, 172 166"/>
+                <path style="--d:.65s" d="M240 104 C240 134, 212 134, 212 166"/>
+                <path style="--d:.7s" d="M240 104 C240 134, 270 134, 270 166"/>
+              </g>
+              <g class="org__nodes">
+                <circle class="org__root" style="--d:0s" cx="150" cy="30" r="10"/>
+                <circle style="--d:.35s" cx="60" cy="100" r="7"/><circle style="--d:.4s" cx="150" cy="100" r="7"/><circle style="--d:.45s" cx="240" cy="100" r="7"/>
+                <circle style="--d:.8s" cx="30" cy="170" r="5"/><circle style="--d:.85s" cx="90" cy="170" r="5"/><circle style="--d:.9s" cx="128" cy="170" r="5"/>
+                <circle style="--d:.95s" cx="172" cy="170" r="5"/><circle style="--d:1s" cx="212" cy="170" r="5"/><circle style="--d:1.05s" cx="270" cy="170" r="5"/>
+              </g>
+            </svg>
+          </div>
+        </article>
+
+        <article class="card" style="--i:4">
+          <div class="card__text">
+            <p class="card__meta">2014 · Space research</p>
+            <h3>RSM Toolkit</h3>
+            <p>Plots terrain from satellite contour data. Huge CSV feeds parsed and rendered with the Marching Squares algorithm in SVG, with pan and zoom in native JavaScript.</p>
+            <p>The animation here is the same algorithm, running live in your browser.</p>
+            <ul class="tags"><li>Marching Squares</li><li>SVG</li><li>ASP.NET</li><li>JavaScript</li></ul>
+          </div>
+          <div class="card__viz"><canvas data-viz="contour" aria-hidden="true"></canvas><span class="card__vizlabel">marching squares · live</span></div>
+        </article>
+
+        <article class="card" style="--i:5">
+          <div class="card__text">
+            <p class="card__meta">2014 — 2018 · Research &amp; Innovation</p>
+            <h3>Fiche Projet Contract</h3>
+            <p>An N-tier ASP.NET approval workflow, re-architected from one-to-one conversations with the client. SSRS, MDM data, Active Directory authentication — deployed and configured on IIS.</p>
+            <p>A custom Outlook-API email parser reads incoming mail, acts on keywords and replies; scheduled reminders dig through data and nudge people on time.</p>
+            <ul class="tags"><li>ASP.NET</li><li>SSRS</li><li>Outlook API</li><li>IIS</li></ul>
+          </div>
+          <div class="card__viz card__viz--flow">
+            <ol class="flow" aria-hidden="true">
+              <li>Request</li><li>Review</li><li>Approve</li><li>Archive</li>
+              <span class="flow__mail">✉</span>
+            </ol>
+            <div class="inbox" aria-hidden="true">
+              <p><span class="kw">APPROVE</span> re: contract #2231 — looks good</p>
+              <p><span class="kw">REMIND</span> pending review · 3 days</p>
+              <p><span class="kw">REJECT</span> missing clause 4.2</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="archive" data-reveal>
+        <h3 class="archive__title">More from the archive</h3>
+        <details class="arch">
+          <summary><span class="arch__year">2018 — 19</span><span class="arch__name">Internal Job Posting</span><span class="arch__dom">Research &amp; Innovation</span><span class="arch__plus" aria-hidden="true"></span></summary>
+          <p>A portal for many types of employees with role-based authorisation in Angular and ASP.NET, email alerts on key actions, and a custom Outlook-API email parser matching predefined keywords.</p>
+        </details>
+        <details class="arch">
+          <summary><span class="arch__year">2017 — 18</span><span class="arch__name">Employee JML</span><span class="arch__dom">Research &amp; Innovation</span><span class="arch__plus" aria-hidden="true"></span></summary>
+          <p>An Angular and ASP.NET MVC approval workflow tailored to the client: mail-client APIs, Active Directory data, and a UI that adapts to the role of whoever is using it.</p>
+        </details>
+        <details class="arch">
+          <summary><span class="arch__year">2017 — 18</span><span class="arch__name">Xpensify</span><span class="arch__dom">Research &amp; Innovation</span><span class="arch__plus" aria-hidden="true"></span></summary>
+          <p>An Angular app to capture and process employee advances and expenses — complex business math, iTextSharp reports, and AngularJS plugins tweaked to fit the rules.</p>
+        </details>
+        <details class="arch">
+          <summary><span class="arch__year">2014</span><span class="arch__name">Dealer Contact Management</span><span class="arch__dom">Automobile</span><span class="arch__plus" aria-hidden="true"></span></summary>
+          <p>One HTML5 codebase shipped to Windows, Android and iOS with Apache Cordova — with access to native device features.</p>
+        </details>
+        <details class="arch">
+          <summary><span class="arch__year">2014</span><span class="arch__name">Social Media Picture Stream</span><span class="arch__dom">Space research</span><span class="arch__plus" aria-hidden="true"></span></summary>
+          <p>Pulls images by hashtag from Facebook, Instagram and Twitter into a live collage. A C# algorithm surfaces the newest first; metadata stored via the platforms' SDKs, OAuth and REST.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- 06 · STACK -->
+    <section class="section stack" id="stack" aria-labelledby="stack-title">
+      <header class="shead" data-reveal>
+        <p class="eyebrow">// naveen.cs</p>
+        <h2 class="h2" id="stack-title">The source, compiled daily.</h2>
+      </header>
+      <div class="stack__grid">
+        <div class="code" data-reveal>
+          <div class="code__bar">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>Naveen.cs</span>
+            <button type="button" class="code__skip" id="codeSkip">skip ⏭</button>
+          </div>
+          <pre class="code__pre" id="codePre" aria-label="Skills expressed as a C# class"><code id="codeOut"></code><span class="caret" aria-hidden="true"></span></pre>
+        </div>
+        <aside class="excel" data-reveal>
+          <h3>Areas of excellence</h3>
+          <ul class="chips chips--big">
+            <li>Software Engineering</li><li>Software Architecture</li><li>Applied AI</li><li>Systems Security &amp; Investigation</li>
+            <li>Research &amp; Development</li><li>Product Development</li><li>Product Maintenance</li><li>Training &amp; Mentoring</li>
+            <li>Project Management</li><li>Web Development</li>
+          </ul>
+          <h3>Also fluent in</h3>
+          <p class="muted">Docker · Azure · NUnit / TDD · Agile · Ionic · Apache Cordova · SharePoint client API · Multi-threading · SSRS · Power BI · Gulp · NPM · Bootstrap · Kendo UI · C / C++ · batch &amp; shell scripting · TFS / ADO · Git</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 07 · PROOF -->
+    <section class="section proof" id="proof" aria-labelledby="proof-title">
+      <header class="shead" data-reveal>
+        <p class="eyebrow">// recognition</p>
+        <h2 class="h2" id="proof-title">Noticed by the communities I learn from.</h2>
+      </header>
+      <div class="proof__grid">
+        <article class="pcard" data-reveal>
+          <p class="pcard__k">Google Developers</p>
+          <p class="pcard__big">DevFest<br>2016</p>
+          <p>Recognised by the Google developer community group and invited to Google Developer Fest 2016.</p>
+        </article>
+        <a class="pcard pcard--link" data-reveal href="https://stackoverflow.com/users/4226224/naveen-kumar-g-c" target="_blank" rel="noopener" data-cursor="open">
+          <p class="pcard__k">Stack Overflow <span class="live"><span class="pulse"></span>live</span></p>
+          <p class="pcard__big" id="soRep">—</p>
+          <p id="soMeta">Reputation earned by sharing knowledge with the community.</p>
+          <span class="pcard__go" aria-hidden="true">↗</span>
+        </a>
+        <article class="pcard" data-reveal>
+          <p class="pcard__k">Visvesvaraya Technological University</p>
+          <p class="pcard__big">Honours</p>
+          <p>B.E. in Computer Science &amp; Engineering, SJC Institute of Technology, 2010 — 2014.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 08 · LANGUAGES -->
+    <section class="hello" aria-label="Languages I speak">
+      <p class="eyebrow">// i18n</p>
+      <p class="hello__word" aria-hidden="true"><span id="helloWord" lang="en">Hello</span></p>
+      <ul class="hello__langs">
+        <li lang="en">English</li><li lang="kn">ಕನ್ನಡ</li><li lang="te">తెలుగు</li><li lang="hi">हिन्दी</li>
+      </ul>
+    </section>
+
+    <!-- 09 · CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">// contact</p>
+      <h2 class="contact__title" id="contact-title"><span data-reveal>Let's build</span> <span data-reveal>what's next.</span></h2>
+      <div class="contact__actions">
+        <button type="button" class="btn btn--primary magnetic" id="copyEmail" data-email="gc.naveen1@gmail.com" data-cursor="copy">
+          <span>gc.naveen1@gmail.com</span><span class="btn__hint">copy</span>
+        </button>
+        <a class="btn magnetic" href="https://wa.me/919591913928" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn magnetic" href="https://www.linkedin.com/in/naveen-kumar-gc-a3455554/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn magnetic" href="https://stackoverflow.com/users/4226224/naveen-kumar-g-c" target="_blank" rel="noopener">Stack Overflow</a>
+        <a class="btn magnetic" href="assets/docs/Naveen-Kumar-GC-Resume.pdf" download>Résumé PDF ↓</a>
+      </div>
+      <p class="contact__alt muted">or call <a class="ulink" href="tel:+919591913928">+91 95919 13928</a> · Bengaluru, India</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Naveen Kumar GC</p>
+    <p class="mono">uptime <b data-uptime>—</b></p>
+    <p><a class="ulink" href="../index.html">classic site (v1)</a> · <a class="ulink" href="https://twitter.com/gcnaveenkumar" target="_blank" rel="noopener">X / Twitter</a> · <a class="ulink" href="#top">back to top ↑</a></p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
